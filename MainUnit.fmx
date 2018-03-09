@@ -1,0 +1,177 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Maps Demo - Petra'
+  ClientHeight = 480
+  ClientWidth = 361
+  Fill.Color = claBlack
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object ImageMap: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    Size.Width = 361.000000000000000000
+    Size.Height = 378.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object RectangleMain: TRectangle
+    Align = Top
+    Fill.Color = claBlack
+    Margins.Left = 8.000000000000000000
+    Margins.Top = 8.000000000000000000
+    Margins.Right = 8.000000000000000000
+    Margins.Bottom = 8.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Stroke.Dash = Dash
+    object FlowLayoutMain: TFlowLayout
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 335.000000000000000000
+      Size.Height = 63.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Justify = Left
+      JustifyLastLine = Left
+      FlowDirection = LeftToRight
+      object ComboBoxStates: TComboBox
+        Align = Left
+        Items.Strings = (
+          'Wyoming'
+          'Wisconsin'
+          'West Virginia'
+          'Washington DC'
+          'Washington'
+          'Virginia'
+          'Vermont'
+          'Utah'
+          'Texas'
+          'Tennessee'
+          'South Dakota'
+          'South Carolina'
+          'Rhode Island'
+          'Pennsylvania'
+          'Oregon'
+          'Oklahoma'
+          'Ohio'
+          'North Dakota'
+          'North Carolina'
+          'New York'
+          'New Mexico'
+          'New Jersey'
+          'New Hampshire'
+          'Nevada'
+          'Nebraska'
+          'Montana'
+          'Missouri'
+          'Mississippi'
+          'Minnesota'
+          'Michigan'
+          'Massachusetts'
+          'Maryland'
+          'Maine'
+          'Louisiana'
+          'Kentucky'
+          'Kansas'
+          'Iowa'
+          'Indiana'
+          'Illinois'
+          'Idaho'
+          'Hawaii'
+          'Georgia'
+          'Florida'
+          'Delaware'
+          'Connecticut'
+          'Colorado'
+          'California'
+          'Arkansas'
+          'Arizona'
+          'Alaska'
+          'Alabama')
+        ItemIndex = 3
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 152.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object ColorComboBoxState: TColorComboBox
+        DropDownKind = Native
+        Color = claWhite
+        Align = Left
+        Anchors = []
+        DisableFocusEffect = False
+        DropDownCount = 25
+        ItemIndex = 143
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 167.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 23.923076629638670000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnChange = ColorComboBoxStateChange
+      end
+      object FlowLayoutBreak: TFlowLayoutBreak
+        ChangesRules = False
+        Justify = Left
+        JustifyLastLine = Left
+        FlowDirection = LeftToRight
+      end
+      object CheckBoxGradientMap: TCheckBox
+        Align = Left
+        StyledSettings = [Family, Style]
+        IsChecked = True
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 39.000000000000000000
+        Size.Width = 316.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Gradient Fill (Uncheck to set color per state)'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        OnChange = CheckBoxGradientMapChange
+      end
+    end
+  end
+  object LineSeperator: TLine
+    Align = Top
+    LineType = Top
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 89.000000000000000000
+    Size.Width = 351.000000000000000000
+    Size.Height = 8.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claLightblue
+  end
+end
